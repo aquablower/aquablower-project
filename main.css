@@ -17,27 +17,23 @@
 }
 
 html {
-    
+    width: var(--max-width);
+    height: var(--max-height);
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body {
     width: var(--max-width);
     height: var(--max-height);
     font-family: 'Helvetica', sans-serif;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 main {
     position: absolute;
     height: calc(var(--section-number) * var(--max-height));
     width: var(--max-width);
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+    
 }
 
 /* ---- Nav ---- */
@@ -94,7 +90,7 @@ main {
 
 /* ---- Sections ---- */
 
-.sections {
+main > section {
     position: relative;
     height: var(--max-height);
     width: var(--max-width);
@@ -237,6 +233,8 @@ main {
     color: rgb(155, 155, 155);
     font-size: 12px;
 }
+
+/* -- Media Queries -- */
 
 @media (width < 1400px) {
     .form.links {
