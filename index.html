@@ -7,18 +7,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
 <body>
-    <nav>
-        <!-- Insert logo here -->
+    <nav class="desktop nav">
+        <div class="nav desktop-logo">
+
+        </div>
+        <div class="nav desktop-menu">
+            <ul>
+                <li class="nav li home">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav li project">
+                    <a href="#project">Projet</a>
+                </li>
+                <li class="nav li enterprise">
+                    <a href="#enterprise">Entreprise</a>
+                </li>
+                <li class="nav li form">
+                    <a href="#form">Sondage</a>
+                </li>
+                <li class="nav li about-us">
+                    <a href="#about-us">À propos</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="progress"></div>
+    <nav class="mobile nav">
+        <div class="nav header">
+            <div class="nav logo">
+
+            </div>
+            <div class="nav menu-logo">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav menu"> 
+            <div class="nav quit-logo">
+                <i class="fa fa-times"></i>
+            </div>
+            <ul>
+                <li class="nav li home">
+                    <a class="menu-link" href="#home">Home</a>
+                </li>
+                <li class="nav li project">
+                    <a class="menu-link" href="#project">Projet</a>
+                </li>
+                <li class="nav li enterprise">
+                    <a class="menu-link" href="#enterprise">Entreprise</a>
+                </li>
+                <li class="nav li form">
+                    <a class="menu-link" href="#form">Sondage</a>
+                </li>
+                <li class="nav li about-us">
+                    <a class="menu-link" href="#about-us">À propos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <main>
-        <section id="#home" class="sections"></section>
-        <section id="#project" class="sections"></section>
-        <section id="#enterprise" class="sections"></section>
-        <section id="#form" class="sections form section">
+        <section id="home" class="sections"></section>
+        <section id="project" class="sections"></section>
+        <section id="enterprise" class="sections"></section>
+        <section id="form" class="sections form section">
             <div class="form text headline">
                 <p>
                     Sondage
@@ -43,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section id="#about-us" class="sections about-us section">
+        <section id="about-us" class="sections about-us section">
             <div class="about-us text headline">
                 <p>
                     À propos
