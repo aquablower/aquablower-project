@@ -16,7 +16,7 @@
 <body>
     <nav class="desktop nav">
         <div class="nav desktop-logo">
-
+            <a href="#home"><img style="position: absolute; top: 12px; width: 100px; left: 200px" src="./Assets/logo_fond_transparent.png" alt="logo aquablower"></a>
         </div>
         <div class="nav desktop-menu">
             <ul>
@@ -41,7 +41,7 @@
     <nav class="mobile nav">
         <div class="nav header">
             <div class="nav logo">
-
+                <a href="#home"><img style="position: absolute; top: 0px; width: 80px; left: 30px" src="./Assets/logo_fond_transparent.png" alt="logo aquablower"></a>
             </div>
             <div class="nav menu-logo">
                 <i class="fa fa-bars"></i>
@@ -51,6 +51,7 @@
             <div class="nav quit-logo">
                 <i class="fa fa-times"></i>
             </div>
+            <img style="position: absolute; top: 40px; width: 100px" src="./Assets/logo_fond_transparent.png" alt="logo aquablower">
             <ul>
                 <li class="nav li home">
                     <a class="menu-link" href="#home">Home</a>
@@ -68,12 +69,46 @@
                     <a class="menu-link" href="#about-us">À propos</a>
                 </li>
             </ul>
+            <footer class="footer">
+                <p>
+                    @AquaBlower Inc., All rights reserved
+                </p>
+            </footer>
         </div>
     </nav>
     <main>
-        <section id="home" class="sections"></section>
-        <section id="project" class="sections"></section>
-        <section id="enterprise" class="sections"></section>
+        <section id="home" class="sections home section">
+            <img style="width: 300px" src="./Assets/logo_fond_transparent.png" alt="logo aquablower">
+            <div class="home text paragraph">
+                <p>
+                    Oxygénez votre vie avec<br>AquaBlower !
+                </p>
+            </div>
+        </section>
+        <section id="project" class="sections project section">
+            <div class="project text headline">
+                <p>
+                    AquaBlower
+                </p>
+            </div>
+            <div class="project text paragraph">
+                <p>
+                    Preview coming soon. Stay tuned !
+                </p>
+            </div>
+        </section>
+        <section id="enterprise" class="sections enterprise section">
+            <div class="enterprise text headline">
+                <p>
+                    Entreprise
+                </p>
+            </div>
+            <div class="enterprise text paragraph">
+                <p>
+                    AquaBlower Inc. est une entreprise spécialisée dans les purificateurs d'air écologiques à base d'algues. 
+                </p>
+            </div>
+        </section>
         <section id="form" class="sections form section">
             <div class="form text headline">
                 <p>
@@ -94,7 +129,7 @@
                         Code QR
                     </p>
                     <div class="form qrcode img">
-                        <img alt="AquaBlower Form" src="./QRCode pour AquaBlower.png">
+                        <img alt="AquaBlower Form" src="./Assets/QRCode pour AquaBlower.png">
                     </div>
                 </div>
             </div>
@@ -117,7 +152,6 @@
                 </p>
             </footer>
         </section>
-
     </main>
     <script src="./main.js"></script>
 </body>
