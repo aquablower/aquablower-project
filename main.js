@@ -1,15 +1,13 @@
 var logo = document.querySelector('.nav.menu-logo');
 var mobileNav = document.querySelector('.mobile.nav');
-var desktopNav = document.querySelector('.desktop.nav');
 var menu = mobileNav.querySelector('.nav.menu');
 var links = menu.querySelectorAll('.menu-link');
 var quitLogo = menu.querySelector('.nav .quit-logo');
 
 var docE = document.documentElement;
+
 logo.addEventListener('click', () => showMenu());
-
 quitLogo.addEventListener('click', () => removeMenu());
-
 links.forEach(link => link.addEventListener('click', () => removeMenu()));
 
 function removeMenu() {
@@ -24,7 +22,7 @@ function showMenu() {
     mobileNav.style.height = "100vh";
 }
 
-window.onscroll = function(e) { 
+/* window.onscroll = function(e) { 
     var scrollY = window.pageYOffset || docE.scrollTop;
 
     if (scrollY <= this.lastScroll) {
@@ -36,4 +34,4 @@ window.onscroll = function(e) {
     }
 
     this.lastScroll = scrollY ;
-}
+} */
