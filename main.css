@@ -223,7 +223,6 @@ main > section {
 }
 
 .form.text.headline p {
-    color: var(--text-light-color);
     font-size: 5vh;
     text-transform: uppercase;
     font-weight: 600;
@@ -339,7 +338,7 @@ main > section {
 
 /* -- Media Queries -- */
 
-@media (width < 1400px) {
+@media (max-width: 1400px) {
     .form.links {
         justify-content: center;
         align-items: center;
